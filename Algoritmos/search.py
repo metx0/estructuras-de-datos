@@ -1,6 +1,3 @@
-import random
-from quick_sort import quick_sort
-
 """ 
 Implementations of many search algorithms and related stuff
 """
@@ -14,7 +11,7 @@ def is_sorted(list: list) -> bool:
     return True
 
 # Search for all the ocurrences of an element in a list; if it appears many times, return the corresponding indexes
-def search_all(list, element) -> list:
+def search_all(list: list, element) -> list:
     indexes = []
 
     for i in range(len(list)):
@@ -24,14 +21,14 @@ def search_all(list, element) -> list:
     return indexes
 
 # Search for an element in a list. Returns the index of the element
-def linear_search(list, element_to_search) -> int:
+def linear_search(list: list, element_to_search) -> int:
     for index, element in enumerate(list):
         if element == element_to_search:
             return index
     
     return None
 
-def binary_search(list, item) -> int:
+def binary_search(list: list, item) -> int:
     low = 0
     high = len(list) - 1
 
@@ -49,12 +46,8 @@ def binary_search(list, item) -> int:
 
 # Test
 def main():
-    # list1 = [4, 10, 13, 33, 55, 55]
-    # print(binary_search(list1, 13))
-
-    random_list = [random.randint(1, 1000) for _ in range(1000)]
-    quick_sort(random_list, 0, len(random_list) - 1)
-    print(random_list)
+    list1 = [4, 10, 13, 33, 55, 55]
+    print(binary_search(list1, 13))
 
 main()
 

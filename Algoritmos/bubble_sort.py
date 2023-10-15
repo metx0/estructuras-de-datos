@@ -21,7 +21,10 @@ def bubble_sort_2(arr: list) -> None:
                 arr[i] = arr[j]
                 arr[j] = aux
 
-# arr = [10, 4, 6, 2, 120, 33, 0.2]
-# print(arr)
-# bubble_sort_2(arr)
-# print(arr)
+def main():
+    arr = [10, 4, 6, 2, 120, 33, 0.2]
+    print(arr)
+    bubble_sort_2(arr)
+    print(arr)
+
+main()
