@@ -11,7 +11,7 @@ public class QuickSort {
         double pivote = arr[medio];
         i = primero;
         j = ultimo;
-
+    
         do {
             while (arr[i] < pivote) i++;
             while (arr[j] > pivote) j--;
