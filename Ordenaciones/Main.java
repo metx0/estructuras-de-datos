@@ -26,6 +26,7 @@ public class Main {
 
 		System.out.println("Array ordenado con BubbleSort:");
 		System.out.println("Antes: " + Arrays.toString(arrToBubbleSort));
+		// bubbleSort() modifica el arreglo original
 		BubbleSort.bubbleSort(arrToBubbleSort);
 		System.out.println("Ahora: " + Arrays.toString(arrToBubbleSort));
 	}
