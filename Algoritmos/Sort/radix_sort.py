@@ -54,7 +54,7 @@ def counting_sort(arr: list, exp: int):
 	print(arr)
 
 def main():
-	arr = [170, 45, 75, 90, 802, 24, 2, 66]
+	arr = [346, 72, 13, 187, 29, 1250, 950]
 	radix_sort(arr)
 	# print(arr)
 

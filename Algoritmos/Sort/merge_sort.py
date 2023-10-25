@@ -20,7 +20,7 @@ def merge_sort(arr: list) -> list:
 
     return merge(sorted_left, sorted_right)
 
-def merge(left_arr: list, right_arr: list) -> list:
+def merge(left_arr, right_arr) -> list:
     arr_resultado = []
 
     # Comparar los elementos de ambos arreglos y eliminarlos de ellos
@@ -41,6 +41,7 @@ def merge(left_arr: list, right_arr: list) -> list:
         arr_resultado.append(right_arr[0])
         right_arr.pop(0)
 
+    print(arr_resultado)
     return arr_resultado
 
 def main():

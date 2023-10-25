@@ -72,13 +72,14 @@ def partition_2(arr: list, left: int, right: int) -> int:
 	# Intercambiar el pivote
 	(arr[i + 1], arr[right]) = (arr[right], arr[i + 1])
 
+	print(arr)
 	return i + 1
 
 # Test
 def main():
-	arr = [4, 6, 8, 5, 2, 9, 5, 7]
+	arr = [346, 72, 13, 187, 29, 1250, 950]
 	quick_sort_2(arr, 0, len(arr) - 1)
-	print(arr)
+	# print(arr)
 
 	# Lista de enteros aleatorios entre 1-1000
 	# random_list = [random.randint(1, 1000) for _ in range(1000)]

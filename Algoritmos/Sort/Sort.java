@@ -42,10 +42,30 @@ public class Sort {
         }
     }
 
-    public static void main(String[] args) {
-        int[] arr = {4, 10, 3, 20, -1, 2, 100};
+    public static class Persona {
+        private String nombre;
+        private int edad;
+
+        public Persona(String nombre, int edad) {
+            this.nombre = nombre;
+            this.edad = edad;
+        }
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+        /*int[] arr = {4, 10, 3, 20, -1, 2, 100};
         Sort.printArr(arr);
         Sort.bubbleSort2(arr);
-        Sort.printArr(arr);
+        Sort.printArr(arr);*/
+
+        Sort.Persona p1 = new Sort.Persona("Coco", 12);
+
+        int[] nums = {32, 12, 3213123};
+
+        String name = "Miguel";
+        String name2 = "Caca";
+
+        System.out.println(p1.hashCode());  
+        // System.out.println(name2.hashCode());
     }
 }

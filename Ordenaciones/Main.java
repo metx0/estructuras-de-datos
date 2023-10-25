@@ -24,10 +24,14 @@ public class Main {
 		// int[] arrMergeSort = MergeSort.mergeSort(arrToMergeSort);
 		// System.out.println("Ahora: " + Arrays.toString(arrMergeSort));
 
-		System.out.println("Array ordenado con BubbleSort:");
-		System.out.println("Antes: " + Arrays.toString(arrToBubbleSort));
-		// bubbleSort() modifica el arreglo original
-		BubbleSort.bubbleSort(arrToBubbleSort);
-		System.out.println("Ahora: " + Arrays.toString(arrToBubbleSort));
+		// System.out.println("Array ordenado con BubbleSort:");
+		// System.out.println("Antes: " + Arrays.toString(arrToBubbleSort));
+		// // bubbleSort() modifica el arreglo original
+		// BubbleSort.bubbleSort(arrToBubbleSort);
+		// System.out.println("Ahora: " + Arrays.toString(arrToBubbleSort));
+
+		int[] arr = {346, 72, 13, 187, 29, 1250, 950, 12, 1000, 18, -1, 20, 33, 190, 5};
+		System.out.println(Arrays.toString(MergeSort.mergeSort(arr)));
+		// BubbleSort.bubbleSort(arr);
 	}
 }
