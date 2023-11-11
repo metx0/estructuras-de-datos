@@ -53,10 +53,10 @@ public class Sort {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        /*int[] arr = {4, 10, 3, 20, -1, 2, 100};
+        int[] arr = {4, 10, 3, 20, -1, 2, 100};
         Sort.printArr(arr);
         Sort.bubbleSort2(arr);
-        Sort.printArr(arr);*/
+        Sort.printArr(arr);
 
         Sort.Persona p1 = new Sort.Persona("Coco", 12);
 
