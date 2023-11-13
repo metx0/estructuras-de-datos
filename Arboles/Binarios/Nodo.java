@@ -1,14 +1,15 @@
 /*
+Un nodo de un árbol binario
 Los nodos de un árbol binario tienen como máximo dos hijos: el izquierdo y
 el derecho
 */
 
-public class NodoBinario {
+public class Nodo {
 	private int dato;
-	private NodoBinario izquierdo, derecho;
+	private Nodo izquierdo, derecho;
 	// private NodoBinario derecho;
 
-	public NodoBinario(int dato) {
+	public Nodo(int dato) {
 		this.dato = dato;
 	}
 

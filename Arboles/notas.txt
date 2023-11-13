@@ -1,0 +1,6 @@
+Los hijos de un nodo pueden ser tratados como una lista; un objeto nodo puede
+tener de atributo un arraylist llamado "hijos". Para añadirle un hijo, solo sería
+necesario añadir el nodo hijo a esa lista
+
+En la implementación con referencias, un nodo tiene los atributos "primerHijo" y "siguienteHermano"
+"primerHijo" guarda la referencia del primer hijo. Si quieres añadir un segundo hijo, lo que haces es setearle el atributo "siguienteHermano" a "primerHijo" como el nodo que quieres añadir, como si fuese una lista enlazada (si lo vemos de esa forma, "primerHijo" es la cabeza de la lista enlazada). Así, para añadir más hijos, tienes que recuperar el último hermano de "primerHijo" y a ese setearle como "siguienteHermano" el nodo que quieres añadir
