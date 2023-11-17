@@ -48,10 +48,12 @@ public class Main {
 		arbolGeneral.imprimirArbol(Recorrido.PREFIJO);
 		arbolGeneral.imprimirArbol(Recorrido.INFIJO);
 		arbolGeneral.imprimirArbol(Recorrido.POSFIJO);
+
+		System.out.println("Altura del árbol general: " + arbolGeneral.obtenerAltura(raiz));
 	}
 
 	public static void main(String[] args) {
-		Main.imprimirArbolGeneral();
+		// Main.imprimirArbolGeneral();
 
 		// Conversión del árbol general a binario
 		// Creamos un arreglo de nodos y se crea el elemento en base al arreglo de nombres
@@ -68,36 +70,36 @@ public class Main {
 		// Se añaden manualmente, usando el arreglo de nodos binarios
 		arbolBinario.agregarNodoArbol(raizBinario, nodosBinarios[0]);
 		arbolBinario.agregarNodoArbol(nodosBinarios[0], nodosBinarios[1]);
-		arbolBinario.agregarNodoArbol(nodosBinarios[0], nodosBinarios[6]);
-		arbolBinario.agregarNodoArbol(nodosBinarios[1], nodosBinarios[2]);
-		arbolBinario.agregarNodoArbol(nodosBinarios[2], nodosBinarios[3]);
-		arbolBinario.agregarNodoArbol(nodosBinarios[3], nodosBinarios[4]);
-		arbolBinario.agregarNodoArbol(nodosBinarios[4], nodosBinarios[5]);
-		arbolBinario.agregarNodoArbol(nodosBinarios[6], nodosBinarios[7]);
-		arbolBinario.agregarNodoArbol(nodosBinarios[7], nodosBinarios[8]);
-		arbolBinario.agregarNodoArbol(nodosBinarios[8], nodosBinarios[9]);
-		arbolBinario.agregarNodoArbol(nodosBinarios[8], nodosBinarios[12]);
-		arbolBinario.agregarNodoArbol(nodosBinarios[9], nodosBinarios[10]);
-		arbolBinario.agregarNodoArbol(nodosBinarios[10], nodosBinarios[11]);
-		arbolBinario.agregarNodoArbol(nodosBinarios[12], nodosBinarios[13]);
-		arbolBinario.agregarNodoArbol(nodosBinarios[13], nodosBinarios[14]);
-		arbolBinario.agregarNodoArbol(nodosBinarios[14], nodosBinarios[15]);
+		// arbolBinario.agregarNodoArbol(nodosBinarios[0], nodosBinarios[6]);
+		// arbolBinario.agregarNodoArbol(nodosBinarios[1], nodosBinarios[2]);
+		// arbolBinario.agregarNodoArbol(nodosBinarios[2], nodosBinarios[3]);
+		// arbolBinario.agregarNodoArbol(nodosBinarios[3], nodosBinarios[4]);
+		// arbolBinario.agregarNodoArbol(nodosBinarios[4], nodosBinarios[5]);
+		// arbolBinario.agregarNodoArbol(nodosBinarios[6], nodosBinarios[7]);
+		// arbolBinario.agregarNodoArbol(nodosBinarios[7], nodosBinarios[8]);
+		// arbolBinario.agregarNodoArbol(nodosBinarios[8], nodosBinarios[9]);
+		// arbolBinario.agregarNodoArbol(nodosBinarios[8], nodosBinarios[12]);
+		// arbolBinario.agregarNodoArbol(nodosBinarios[9], nodosBinarios[10]);
+		// arbolBinario.agregarNodoArbol(nodosBinarios[10], nodosBinarios[11]);
+		// arbolBinario.agregarNodoArbol(nodosBinarios[12], nodosBinarios[13]);
+		// arbolBinario.agregarNodoArbol(nodosBinarios[13], nodosBinarios[14]);
+		// arbolBinario.agregarNodoArbol(nodosBinarios[14], nodosBinarios[15]);
 
-		System.out.println("\n\nImprimiendo el árbol binario: \n");
-		arbolBinario.imprimirArbol(Recorrido.PREFIJO);
-		arbolBinario.imprimirArbol(Recorrido.INFIJO);
-		arbolBinario.imprimirArbol(Recorrido.POSFIJO);
+		// System.out.println("\n\nImprimiendo el árbol binario: \n");
+		// arbolBinario.imprimirArbol(Recorrido.PREFIJO);
+		// arbolBinario.imprimirArbol(Recorrido.INFIJO);
+		// arbolBinario.imprimirArbol(Recorrido.POSFIJO);
 
-		System.out.print("\n¿Está vacío el árbol? ");
-		System.out.println(arbolBinario.estaVacio());
+		// System.out.print("\n¿Está vacío el árbol? ");
+		// System.out.println(arbolBinario.estaVacio());
 
 		// Obtener la altura del árbol binario
 		System.out.print("La altura del árbol es: ");
 		System.out.println(arbolBinario.obtenerAltura(raizBinario));
 
-		System.out.println("Imprimiendo el subárbol del nodo 'G': ");
+		// System.out.println("Imprimiendo el subárbol del nodo 'G': ");
 
 		// Imprimimos el subárbol del nodo 7 en notación prefija
-		arbolBinario.imprimirSubArbol(nodosBinarios[8], Recorrido.PREFIJO);
+		// arbolBinario.imprimirSubArbol(nodosBinarios[8], Recorrido.PREFIJO);
 	}
 }
