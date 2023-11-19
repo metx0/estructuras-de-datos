@@ -28,10 +28,6 @@ public class Main {
 		int datoAEliminar = sc.nextInt();
 
 		avl.remover(datoAEliminar);
-
-		System.out.print("\nAltura del árbol: ");
-		System.out.println(avl.calcularAltura());
-
 		avl.imprimir();
 	}
 }

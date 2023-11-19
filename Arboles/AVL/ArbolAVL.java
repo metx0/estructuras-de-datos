@@ -70,7 +70,7 @@ public class ArbolAVL {
 			}
 		}
 
-		return aplicarRotacion(raiz);
+		return raiz;
 	}
 
 	private Nodo aplicarRotacion(Nodo raiz) {
