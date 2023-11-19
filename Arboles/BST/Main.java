@@ -16,6 +16,8 @@ public class Main {
 		// System.out.println(arbol.calcularFactorEquilibrio(raiz));
 
 		ArbolBinario bst = new ArbolBinario();
+		bst.imprimir();
+
 		bst.insertar(8);
 		bst.insertar(10);
 		bst.insertar(3);
@@ -24,13 +26,15 @@ public class Main {
 		bst.insertar(14);
 		bst.insertar(16);
 		bst.insertar(13);
+		bst.insertar(13);
+		bst.insertar(0);
 		
 		System.out.println("Altura del árbol: " + bst.calcularAltura());
 		System.out.println("Equilibrio: " + bst.calcularFactorEquilibrio(bst.raiz));
-		System.out.println(bst.buscar(1));
+		// System.out.println(bst.buscar(1));
 		System.out.println("Valor mínimo del árbol: " + bst.encontrarMinimo());
-
-		bst.remover(8);
+		
+		// bst.remover(8);
 		bst.imprimir();
 	}
 }

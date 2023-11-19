@@ -22,8 +22,7 @@ public class ArbolBinario {
 	// Método auxiliar para realizar la inserción recursivamente
 	private Nodo insertarRec(Nodo raiz, int dato) {
 		if (raiz == null) {
-			Nodo nuevo = new Nodo(dato);
-			return nuevo;
+			return new Nodo(dato);
 		} 
 
 		if (dato < raiz.dato) {
@@ -155,7 +154,7 @@ public class ArbolBinario {
 
 		// Obtener la altura de los subárboles izquierdo y derecho
 		int alturaIzquierda = calcularAltura(nodo.izquierdo);
-		int alturaDerecha = calcularAltura(nodo.derecho);
+		int alturaDerecha = calcularAltura(nodo.derecho); 
 
 		// La altura del árbol es la máxima altura de los subárboles más 1
 		return Math.max(alturaIzquierda, alturaDerecha) + 1;
